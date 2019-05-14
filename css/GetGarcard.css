@@ -139,7 +139,7 @@ body{
     -moz-background-image: url("../img/GarcardBg.png");
     -o-background-image: url("../img/GarcardBg.png");
     /*background-position: center center;!* 背景图垂直、水平均居中 *!*/
-    /*background-repeat: repeat-x;!* 背景图不平铺 *!*/
+    background-repeat: no-repeat;/* 背景图不平铺 */
     /*background-attachment: fixed;!* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 *!*/
     background-size: 100% 100%;/* 让背景图基于容器大小伸缩 */
     -webkit-background-size: 100% 100%;
@@ -187,7 +187,7 @@ body{
     /*display: block;*/
     /*margin: 0 auto 0rem;*/
     position: absolute;
-    top: 45%;
+    top: 43%;
     left: 0;
     right: 0;
     margin: 0 auto ;
@@ -358,6 +358,7 @@ body{
     -webkit-background-image: url("../img/button.png");
     -moz-background-image: url("../img/button.png");
     -o-background-image: url("../img/button.png");
+    background-repeat: no-repeat;
     background-size: 100% auto;
     -webkit-background-size: 100% auto;
     -moz-background-size: 100% auto;
