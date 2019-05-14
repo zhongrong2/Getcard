@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>领取加油卡</title>
+
+    <link rel="stylesheet" href="css/GetGarcard.css">
+
+</head>
+<body>
+<div id="box">
+    <img src="img/GetcardTitle.png" alt="" class="title">
+    <div class="RuleBox">
+        <p>
+            填写正确车牌号即可获得一次</p><p class="free">
+        免费</p><p>
+        加油</p><p class="price">
+        20</p><p>
+        元的体验资格</p>
+    </div>
+    <div class="InfoOccupy"></div>
+    <div class="InfoBox">
+        <div class="SurplusQuota">仅剩300名</div>
+        <div id="select">
+            <div class="checkBox">
+                <span class="checkspan">车辆类型</span>
+                <img src="img/select.png" alt="">
+            </div>
+            <ul>
+                <li>
+                    私家车
+                </li>
+                <li>
+                    滴滴
+                </li>
+                <li>
+                    出租
+                </li>
+                <li>
+                    大巴
+                </li>
+                <li>
+                    客车
+                </li>
+            </ul>
+        </div>
+        <div class="CarNum">
+            车牌号码
+        </div>
+        <div class="agreement">
+            <input type="checkbox" id="user">
+            <label for="user">龙瑞森用户协议</label>
+        </div>
+        <div class="button" onclick="Get()">
+            立即领取
+        </div>
+    </div>
+</div>
+<!--弹窗开始-->
+<div id="hint"></div>
+<!--提示内容开始-->
+<div id="prompt">
+    <div class="prompt-top">
+        <!--<img src="img/success.png" alt="">-->
+        <img src="img/fail.png" alt="">
+    </div>
+    <div class="prompt-middle">
+        <!--<p class="promptTxt">恭喜您获得一次免费加油20元的机会</p>-->
+        <p class="promptTxt">您填写的车牌号码与之前填写的车牌号码有误，是否覆盖之前的车牌号码</p>
+    </div>
+    <div class="prompt-btns">
+        <!--<span class="sure" style="width: 100%">知道了</span>-->
+        <span class="sure" onclick="Cancel()">确定</span>
+        <span class="cancel" onclick="Cancel()">取消</span>
+    </div>
+</div>
+<!--提示内容结束-->
+<!--弹窗结束-->
+</body>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/GetGarcard.js"></script>
+
+</html>
