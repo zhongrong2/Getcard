@@ -184,8 +184,13 @@ body{
 .InfoBox{
     width: 54.5%;
     /*width: 4.02rem;*/
-    display: block;
-    margin: 0 auto 0rem;
+    /*display: block;*/
+    /*margin: 0 auto 0rem;*/
+    position: absolute;
+    top: 35%;
+    left: 0;
+    right: 0;
+    margin: 0 auto ;
 }
 .SurplusQuota{
     height: 0.45rem;
