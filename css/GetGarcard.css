@@ -172,7 +172,7 @@ body{
     display: table;
 }
 .RuleBox li{
-    float: left;
+    /*float: left;*/
     display: inline-block!important;
     white-space: nowrap;
 }
