@@ -159,7 +159,7 @@ body{
     /*width: 5.35rem;*/
     height: 1.05rem;
     display: block;
-    margin: 0.74rem auto 0;
+    margin: 10% auto 0;
     font-size:0.4rem;
     font-family:PingFang-SC-Medium;
     font-weight:500;
@@ -168,7 +168,7 @@ body{
     text-align: center;
 }
 .RuleBox p{
-    display: inline-block;
+    display: inline-block!important;
 }
 .free{
     color: white;
