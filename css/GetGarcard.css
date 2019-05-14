@@ -179,7 +179,7 @@ body{
 .InfoOccupy{
     width: 100%;
     display: block;
-    padding-top: 15%;
+    padding-top: 0.63rem;
 }
 .InfoBox{
     width: 54.5%;
@@ -190,7 +190,7 @@ body{
 .SurplusQuota{
     height: 0.45rem;
     display: block;
-    margin: 0.4rem auto 0;
+    margin: 0rem auto 0;
     font-size:0.48rem;
     font-family:PingFang-SC-Regular;
     font-weight:400;
