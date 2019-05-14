@@ -341,11 +341,11 @@ body{
     -webkit-border-radius: 0.03rem;
     -moz-border-radius: 0.03rem;
 }
-.agreement label{
+.agreement a{
     font-size:0.22rem;
     font-family:PingFang-SC-Regular;
     font-weight:400;
-    color:rgba(225,69,56,1);
+    color:rgba(225,69,56,1)!important;
     line-height:0.12rem;
     padding-left: 0.12rem;
 }
@@ -443,6 +443,46 @@ body{
 }
 .surActive{
     width: 100%!important;
+}
+/*提示框样式2*/
+#probox{
+    width: 3.5rem;
+    height: 2.5rem;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 0.3rem;
+    -webkit-border-radius: 0.3rem;
+    -moz-border-radius: 0.3rem;
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    bottom: 50%;
+    left: 50%;
+    margin: auto -1.75rem;
+    z-index: 15;
+    float: left;
+    display: none;
+}
+.pro-top{
+    width: 100%;
+    float: left;
+    margin-top: 0.4rem;
+}
+.pro-top img{
+    width: 1rem;
+    height: 1rem;
+    display: block;
+    margin: 0rem auto;
+}
+.pro-middle{
+    width: 100%;
+    float: left;
+    margin-top: 0.4rem;
+    text-align: center;
+    font-size: 0.28rem;
+    font-family:PingFang-SC-Regular;
+    font-weight:500;
+    color: #FFFFFF;
+    line-height: 0.3rem;
 }
 @media screen and (max-height: 812px){
     .InfoOccupy {

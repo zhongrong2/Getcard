@@ -7,7 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>领取加油卡</title>
 
+    <link rel="stylesheet" href="css/carNumber.css">
     <link rel="stylesheet" href="css/GetGarcard.css">
+    <link rel="stylesheet" href="layer_mobile/need/layer.css">
 
 </head>
 <body>
@@ -26,33 +28,31 @@
         <div class="SurplusQuota">仅剩300名</div>
         <div id="select">
             <div class="checkBox">
-                <span class="checkspan">车辆类型</span>
+                <span class="checkspan" data="0">车辆类型</span>
                 <img src="img/select.png" alt="">
             </div>
             <ul>
-                <li>
+                <li data="1">
                     私家车
                 </li>
-                <li>
+                <li data="2">
                     滴滴
                 </li>
-                <li>
+                <li data="3">
                     出租
                 </li>
-                <li>
+                <li data="4">
                     大巴
                 </li>
-                <li>
+                <li data="5">
                     客车
                 </li>
             </ul>
         </div>
-        <div class="CarNum">
-            车牌号码
-        </div>
+        <div class="CarNum">车牌号码</div>
         <div class="agreement">
-            <input type="checkbox" id="user">
-            <label for="user">龙瑞森用户协议</label>
+            <input type="checkbox" id="user" value="1">
+            <a href="User.html">活动声明</a>
         </div>
         <div class="button" onclick="Get()">
             立即领取
@@ -61,18 +61,25 @@
 </div>
 <!--弹窗开始-->
 <div id="hint"></div>
+<!--提示框开始-->
+<div id="probox">
+    <div class="pro-top">
+        <img src="img/prompt.png" alt="">
+    </div>
+    <div class="pro-middle">
+        <p class="ProTilet">请选择车辆类型</p>
+    </div>
+</div>
+<!--提示框结束-->
 <!--提示内容开始-->
 <div id="prompt">
     <div class="prompt-top">
-        <!--<img src="img/success.png" alt="">-->
         <img src="img/fail.png" alt="">
     </div>
     <div class="prompt-middle">
-        <!--<p class="promptTxt">恭喜您获得一次免费加油20元的机会</p>-->
         <p class="promptTxt">您填写的车牌号码与之前填写的车牌号码有误，是否覆盖之前的车牌号码</p>
     </div>
     <div class="prompt-btns">
-        <!--<span class="sure" style="width: 100%">知道了</span>-->
         <span class="sure" onclick="Cancel()">确定</span>
         <span class="cancel" onclick="Cancel()">取消</span>
     </div>
@@ -82,6 +89,8 @@
 </body>
 
 <script src="js/jquery-3.3.1.min.js"></script>
+<script src="layer_mobile/layer.js"></script>
+<script src="js/CarNumber.js"></script>
 <script src="js/GetGarcard.js"></script>
 
 </html>
