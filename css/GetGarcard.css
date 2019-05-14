@@ -168,8 +168,12 @@ body{
     text-align: center;
     vertical-align: middle;
 }
+.RuleBox ul{
+    display: table;
+}
 .RuleBox li{
-    display: inline!important;
+    display: inline-block!important;
+    white-space: nowrap;
 }
 .free{
     color: white;
