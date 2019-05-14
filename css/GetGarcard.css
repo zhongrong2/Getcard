@@ -313,7 +313,7 @@ body{
     border-radius: 0.03rem;
     -webkit-border-radius: 0.03rem;
     -moz-border-radius: 0.03rem;
-    border: 2px solid rgba(142,0,1,1);
+    border: 1px solid rgba(142,0,1,1);
 }
 .agreement input[type="checkbox"]::before {
     content: "";
