@@ -169,6 +169,7 @@ body{
     vertical-align: middle;
 }
 .RuleBox li{
+    width: auto!important;
     display: inline-block!important;
 }
 .free{
