@@ -16,11 +16,13 @@
 <div id="box">
     <img src="img/GetcardTitle.png" alt="" class="title">
     <div class="RuleBox">
-        <li>填写正确车牌号即可获得一次
-        <li class="free">免费
-        <li>加油
-        <li class="price">20
-        <li>元的体验资格</li>
+        <ul>
+            <li>填写正确车牌号即可获得一次
+            <li class="free">免费
+            <li>加油
+            <li class="price">20
+            <li>元的体验资格</li>
+        </ul>
     </div>
     <div class="InfoOccupy"></div>
     <div class="InfoBox">
@@ -46,6 +48,25 @@
                 <li data="5">
                     客车
                 </li>
+                <li data="5">
+                    客车
+                </li>
+                <li data="5">
+                    客车
+                </li>
+                <li data="5">
+                    客车
+                </li>
+                <li data="5">
+                    客车
+                </li>
+                <li data="5">
+                    客车
+                </li>
+                <li data="5">
+                    客车
+                </li>
+
             </ul>
         </div>
         <div class="CarNum">车牌号码</div>
@@ -76,10 +97,10 @@
         <img src="img/fail.png" alt="">
     </div>
     <div class="prompt-middle">
-        <p class="promptTxt">您填写的车牌号码与之前填写的车牌号码有误，是否覆盖之前的车牌号码</p>
+        <p class="promptTxt"></p>
     </div>
     <div class="prompt-btns">
-        <span class="sure" onclick="Cancel()">确定</span>
+        <span class="sure" onclick="Sure()">确定</span>
         <span class="cancel" onclick="Cancel()">取消</span>
     </div>
 </div>
@@ -89,6 +110,7 @@
 
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="layer_mobile/layer.js"></script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.4.0.js"></script>
 <script src="js/CarNumber.js"></script>
 <script src="js/GetGarcard.js"></script>
 
