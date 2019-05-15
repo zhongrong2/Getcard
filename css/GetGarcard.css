@@ -322,6 +322,7 @@ body{
     -webkit-border-radius: 0.03rem;
     -moz-border-radius: 0.03rem;
     border: 1px solid rgba(142,0,1,1);
+    margin-top: -0.1rem;
 }
 .agreement input[type="checkbox"]::before {
     content: "";
@@ -372,11 +373,11 @@ body{
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
-    font-size:0.34rem;
+    font-size:0.4rem;
     font-family:MicrosoftYaHei-Bold;
     font-weight:bold;
     color:rgba(225,69,56,1);
-    line-height:0.9rem;
+    line-height:0.85rem;
     text-align: center;
 }
 /*弹窗样式*/
