@@ -350,12 +350,13 @@ body{
     -moz-border-radius: 0.03rem;
 }
 .agreement a{
+    display: inline-block;
     font-size:0.22rem;
     font-family:PingFang-SC-Regular;
     font-weight:400;
     color:rgba(225,69,56,1)!important;
-    line-height:0.12rem;
-    padding-left: 0.12rem;
+    line-height:0.3rem;
+    padding-left: 0.22rem;
 }
 .button{
     width: 69.5%;
