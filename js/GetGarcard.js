@@ -35,7 +35,7 @@ $(".CarNum").click(function (e) {
     });
     showProvince();
     e.stopPropagation();
-})
+});
 // 关闭车牌号键盘
 $("#box").click(function () {
     closePro();
@@ -84,8 +84,15 @@ function Get() {
         return false;
     } ;
     //判断车牌号是否为空
-    if (CarNum == "车牌号码"){
-        $(".ProTilet").html("请输入车牌号");
+    if (CarNum == "车牌号码" || CarNum.length == 0){
+        $(".ProTilet").html("请填写车牌号");
+        $("#probox").show();
+        hide();
+        return false;
+    }
+    //判断车牌号格式是否正确
+    if(!(/^[京津沪渝冀豫云辽黑湘皖鲁新苏浙赣鄂桂甘晋蒙陕吉闽贵粤青藏川宁琼使领A-Z]{1}[A-Z]{1}[警京津沪渝冀豫云辽黑湘皖鲁新苏浙赣鄂桂甘晋蒙陕吉闽贵粤青藏川宁琼]{0,1}[A-Z0-9]{4}[A-Z0-9挂学警港澳]{1}[A-Z0-9]{0,1}[A-Z0-9]{0,1}$/.test(CarNum))){
+        $(".ProTilet").html("车牌号错误，请重新输入");
         $("#probox").show();
         hide();
         return false;
@@ -106,6 +113,7 @@ function Get() {
             console.log(data);
             if (data.status == 0){
                 $(".promptTxt").html(data.msg);
+                $("#hint").show();
                 $("#prompt").show();
             } else{
                 $(".promptTxt").html(data.msg);
@@ -113,6 +121,7 @@ function Get() {
                 $(".prompt-top img").attr("src","img/success.png")
                 $(".cancel").html("确定");
                 $(".cancel").css("width","100%");
+                $("#hint").show();
                 $("#prompt").show();
             }
         },

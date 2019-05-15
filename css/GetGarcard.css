@@ -409,6 +409,14 @@ body{
     float: left;
     padding: 0rem 0.2rem;
     display: none;
+    background-image: url("../img/promptBg.png");
+    -webkit-background-image: url("../img/promptBg.png");
+    -moz-background-image: url("../img/promptBg.png");
+    -o-background-image: url("../img/promptBg.png");
+    background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
 }
 .prompt-top{
     width: 100%;

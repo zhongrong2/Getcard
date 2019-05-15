@@ -136,7 +136,7 @@
     background-color:#CED3D9;
     text-align:center;
     padding:4px 2px;
-    font-size:18px;
+    font-size:0.32rem;
 }
 .ul_keybord li{
     float:left;
@@ -167,7 +167,7 @@
     border-radius:4px;
     box-shadow: 2px 2px 2px #888888;
     /* max-width:48px; margin:0 auto; */
-    line-height:32px;
+    line-height:54px;
     padding-top:2px;
 }
 .ul_keybord li span:active{
