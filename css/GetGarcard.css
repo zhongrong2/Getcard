@@ -358,8 +358,8 @@ body{
     padding-left: 0.12rem;
 }
 .button{
-    width: 59.5%;
-    height: 0.8rem;
+    width: 69.5%;
+    height: 0.9rem;
     display: block;
     margin: 1.4rem auto 0;
     background-image: url("../img/button.png");
@@ -367,15 +367,15 @@ body{
     -moz-background-image: url("../img/button.png");
     -o-background-image: url("../img/button.png");
     background-repeat: no-repeat;
-    background-size: 100% auto;
-    -webkit-background-size: 100% auto;
-    -moz-background-size: 100% auto;
-    -o-background-size: 100% auto;
+    background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
     font-size:0.34rem;
     font-family:MicrosoftYaHei-Bold;
     font-weight:bold;
     color:rgba(225,69,56,1);
-    line-height:0.8rem;
+    line-height:0.9rem;
     text-align: center;
 }
 /*弹窗样式*/
