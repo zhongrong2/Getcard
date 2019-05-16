@@ -176,8 +176,8 @@ body{
     -o-transform: translate(-50%,0);
 }
 .codebox{
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 4rem;
+    height: 4rem;
     position: relative;
     top: 16.8%;
     left: 50%;
