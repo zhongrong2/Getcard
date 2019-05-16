@@ -6,7 +6,7 @@ var provinces = new Array("京","津","冀","辽","吉","黑","蒙","鲁",
 var keyNums = new Array("0","1","2","3","4","5","6","7","8","9",
     "Q","W","E","R","T","Y","U","I","O","P",
     "A","S","D","F","G","H","J","K","L",
-    "确定","Z","X","C","V","B","N","M","删除");
+    "Del","Z","X","C","V","B","N","M","OK");
 var next=0;
 function showProvince(){
     $("#pro").html("");
@@ -42,18 +42,6 @@ function chooseProvince(obj){
 
 function choosekey(obj,jj){
     if(jj==29){
-        var car =  $(".CarNum").html();
-        if (car.length==7){
-            layer.closeAll();
-        } else{
-            layer.open({
-                content: '请输入正确的车牌号',
-                skin: 'msg',
-                time: 1
-            });
-        }
-
-    }else if(jj==37){
         var oDivHtml = $(".CarNum").html();
 
         if(oDivHtml.length==1){
@@ -69,6 +57,18 @@ function choosekey(obj,jj){
         next=next-1;
         if(next<1){
             next=0;
+        }
+
+    }else if(jj==37){
+        var car =  $(".CarNum").html();
+        if (car.length==7){
+            layer.closeAll();
+        } else{
+            layer.open({
+                content: '请输入正确的车牌号',
+                skin: 'msg',
+                time: 1
+            });
         }
         // console.log(next);
     }else{
@@ -98,9 +98,6 @@ function choosekey(obj,jj){
         }
 
     }
-
-
-
 }
 
 function closePro(){
