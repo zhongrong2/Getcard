@@ -21,8 +21,7 @@ $(document).ready(function(){
             });
         }
     });
-    wx.ready(function () {
-        wx.checkJsApi({
+    wx.checkJsApi({
             jsApiList: [
                 'getLocation'
             ],
@@ -35,7 +34,7 @@ $(document).ready(function(){
                 }
             }
         });
-        wx.getLocation({
+    wx.getLocation({
             success: function (res) {
                 var latitude = res.latitude; // 纬度，浮点数，范围为90 ~ -90
                 var longitude = res.longitude; // 经度，浮点数，范围为180 ~ -180。
@@ -46,7 +45,6 @@ $(document).ready(function(){
                 alert('用户拒绝授权获取地理位置');
             }
         });
-    })
 });
 //点击显示车牌号键盘
 $(".CarNum").click(function (e) {
