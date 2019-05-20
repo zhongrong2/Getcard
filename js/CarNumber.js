@@ -59,9 +59,10 @@ function choosekey(obj,jj){
             next=0;
         }
 
-    }else if(jj==37){
+    }
+    else if(jj==37){
         var car =  $(".CarNum").html();
-        if (car.length==7){
+        if (car.length>=7){
             layer.closeAll();
         } else{
             layer.open({
@@ -71,11 +72,11 @@ function choosekey(obj,jj){
             });
         }
         // console.log(next);
-    }else{
-        if(next>5){
+    }
+    else{
+        if(next>6){
             return
         }
-        // console.log($(".CarNum").length);
         for(var i = 0; i<$(".CarNum").length;i++){
 
             if(next==0 & jj<10 & !isNaN($(obj).text())){
@@ -84,19 +85,19 @@ function choosekey(obj,jj){
                     skin: 'msg',
                     time: 1
                 });
-                return
+                return false;
             }
             var carVal=$(".CarNum").html();
             $(".CarNum").html(carVal+$(obj).text());
             $(".CarNum").addClass("ppHas");
             next=next+1;
-            if(next>5){
-                next=6;
+            if(next>6){
+                next=7;
+                return false
             }
             getpai();
-            return
+            return true
         }
-
     }
 }
 
