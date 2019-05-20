@@ -1,6 +1,7 @@
 $(document).ready(function(){
     var urlAndParam =location.href.split('#')[0];
-    var ID = $("#WeChatID").val();
+    // var ID = $("#WeChatID").val();
+    var ID = gh_cfecc9d6d5f9;
     $.ajax({
         url: "http://lsh.longshihua.cn/WeChatManager/register/CheckweChatConfig",
         data: {url:urlAndParam,ID: ID },
@@ -40,6 +41,7 @@ $(document).ready(function(){
                 var longitude = res.longitude; // 经度，浮点数，范围为180 ~ -180。
                 var speed = res.speed; // 速度，以米/每秒计
                 var accuracy = res.accuracy; // 位置精度
+                alert(latitude,longitude,speed,accuracy);
             },
             cancel: function (res) {
                 alert('用户拒绝授权获取地理位置');
