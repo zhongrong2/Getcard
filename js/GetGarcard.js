@@ -1,7 +1,7 @@
 $(document).ready(function(){
     var urlAndParam =location.href.split('#')[0];
     // var ID = $("#WeChatID").val();
-    var ID = gh_cfecc9d6d5f9;
+    var ID = "gh_cfecc9d6d5f9";
     $.ajax({
         url: "http://lsh.longshihua.cn/WeChatManager/register/CheckweChatConfig",
         data: {url:urlAndParam,ID: ID },
