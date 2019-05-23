@@ -1,7 +1,7 @@
 $(document).ready(function(){
     var urlAndParam =location.href.split('#')[0];
-    // var ID = $("#WeChatID").val();
-    var ID = "gh_cfecc9d6d5f9";
+    var ID = $("#WeChatID").val();
+    // var ID = "gh_cfecc9d6d5f9";
     $.ajax({
         url: "http://lsh.longshihua.cn/WeChatManager/register/CheckweChatConfig",
         data: {url:urlAndParam,ID: ID },
@@ -18,40 +18,11 @@ $(document).ready(function(){
                 timestamp: timestamp,
                 nonceStr: noncestr,
                 signature: signature,
-                jsApiList: ['chooseImage','uploadImage','checkJsApi', 'openLocation', 'getLocation']
+                jsApiList: ['chooseImage','uploadImage']
             });
-            wx.ready(function () {
-                wx.checkJsApi({
-                    jsApiList: [
-                        'getLocation'
-                    ],
-                    success: function (res) {
-                        // alert(JSON.stringify(res));
-                        // alert(JSON.stringify(res.checkResult.getLocation));
-                        if (res.checkResult.getLocation == false) {
-                            alert('你的微信版本太低，不支持微信JS接口，请升级到最新的微信版本！');
-                            return;
-                        }
-                    }
-                });
-                wx.getLocation({
-                    success: function (res) {
-                        var latitude = res.latitude; // 纬度，浮点数，范围为90 ~ -90
-                        var longitude = res.longitude; // 经度，浮点数，范围为180 ~ -180。
-                        var speed = res.speed; // 速度，以米/每秒计
-                        var accuracy = res.accuracy; // 位置精度
-                        alert(latitude,longitude,speed,accuracy);
-                    },
-                    cancel: function (res) {
-                        alert('用户拒绝授权获取地理位置');
-                    }
-                });
-            })
         }
     });
 });
-
-
 
 //点击显示车牌号键盘
 $(".CarNum").click(function (e) {

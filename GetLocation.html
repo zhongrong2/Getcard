@@ -11,6 +11,8 @@
 
 </head>
 <body>
+
+<input type="text" hidden id="WeChatID" value="">
 <!--提示框开始-->
 <div id="probox" style="display: none">
     <div class="pro-top">
@@ -68,7 +70,7 @@
                             var longitude = res.longitude; // 经度，浮点数，范围为180 ~ -180。
                             var speed = res.speed; // 速度，以米/每秒计
                             var accuracy = res.accuracy; // 位置精度
-                            alert(latitude,longitude,speed,accuracy);
+                            // alert(latitude,longitude,speed,accuracy);
                             $.ajax({
                                 url:"",
                                 method:"post",
@@ -84,7 +86,7 @@
                             })
                         },
                         cancel: function (res) {
-                            alert('用户拒绝授权获取地理位置');
+                            alert('用户拒绝授权获取地理位置','','确定',function(){wx.closeWindow();});
                         }
                     });
                 })
